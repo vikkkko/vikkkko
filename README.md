@@ -13,5 +13,3 @@
 ![Solidity](https://img.shields.io/badge/-Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
 ![Blockchain](https://img.shields.io/badge/-Blockchain-121D33?style=flat-square&logo=blockchain.com&logoColor=white)
 ![Smart Contracts](https://img.shields.io/badge/-Smart%20Contracts-3C3C3D?style=flat-square&logo=ethereum&logoColor=white)
-
-
