@@ -33,4 +33,4 @@ jobs:
 
           git add -A
           git commit -m "Updated contribution snake graph" || exit 0
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git output
+          git push origin HEAD:output
