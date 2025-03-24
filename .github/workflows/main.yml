@@ -30,12 +30,11 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          git clean -fd 
-          
-          git fetch origin output || git checkout --orphan output
-          git checkout output || git checkout -b output
-          git reset --hard origin/output
+          git branch -D output || true
+          git push origin --delete output || true
+
+          git checkout -b output || git checkout output
 
           git add -A
           git commit -m "Updated contribution snake graph" || exit 0
-          git push origin HEAD:output
+          git push -f origin HEAD:output
