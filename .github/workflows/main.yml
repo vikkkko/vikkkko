@@ -30,6 +30,8 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
+          git clean -fd 
+          
           git fetch origin output || git checkout --orphan output
           git checkout output || git checkout -b output
           git reset --hard origin/output
